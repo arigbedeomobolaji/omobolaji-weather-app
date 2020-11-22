@@ -66,6 +66,13 @@ app.get("/weather", (req, res) => {
 app.get("/profile", (req, res) => {
   res.send('Check Back Later');
 });
+
+app.get("*", (req, res) => {
+  res.render("404", {
+    title: "404",
+    year: new Date().getFullYear()
+  });
+});
 const port = process.env.PORT;
 app.listen(port, () => {
  console.log(`Server is listening on port ${port}`);

@@ -15,6 +15,7 @@ body {
     url("/img/bg.jpg") no-repeat center center/cover;
   width: 100vw;
   min-height: 100vh;
+  color: #fff;
 }
 
 h1 {
@@ -214,6 +215,10 @@ textarea:focus {
 
 .contact .form-group button {
   width: 90%;
+}
+
+.heading {
+  padding-top: 5rem;
 }
 /* footer */
 footer {
