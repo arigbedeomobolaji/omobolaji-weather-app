@@ -64,7 +64,7 @@ app.get("/weather", (req, res) => {
 });
 
 app.get("/profile", (req, res) => {
-  res.send('Check Back Later');
+  res.redirect("/");
 });
 
 app.get("*", (req, res) => {
