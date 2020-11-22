@@ -1,0 +1,232 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  background: linear-gradient(
+      135deg,
+      rgba(0, 0, 0, 0.6) 50%,
+      rgba(0, 0, 0, 0.7) 100%
+    ),
+    url("/img/bg.jpg") no-repeat center center/cover;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 2;
+}
+
+p {
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
+img {
+  width: 100%;
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 2rem;
+  color: #fff;
+  transition: all 1s ease-in-out;
+}
+
+hr {
+  border: 1px dotted rgba(0, 0, 0, 0.3);
+}
+
+ul {
+  list-style: none;
+}
+
+a:hover {
+  background: #000;
+}
+/* utilities */
+.form-group input,
+.form-group textarea {
+  padding: 1.8rem;
+  margin-bottom: 2px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+::placeholder {
+  padding-left: 2rem;
+}
+
+input:focus,
+textarea:focus {
+  padding-left: 2rem;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  font-style: italic;
+  text-transform: capitalize;
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.form-group input:focus::placeholder,
+.form-group textarea:focus::placeholder {
+  opacity: 0;
+}
+
+.form-group button {
+  padding: 1rem 0;
+  width: 300px;
+  text-align: center;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  display: inline-block;
+  transition: all 1s ease-in-out;
+}
+
+.form-group button:hover {
+  background: #000;
+  color: #fff;
+}
+/* navbar */
+#navbar {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 0.1rem;
+  width: 100vw;
+  background: #333;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+#navbar .active {
+  background: dodgerblue;
+}
+
+#navbar a i {
+  padding-right: 0.5rem;
+}
+.location {
+  padding-top: 6rem;
+}
+
+.location .form-group {
+  margin: 1rem;
+  position: relative;
+}
+
+.location .form-group i {
+  position: absolute;
+  left: 0.5rem;
+  top: 0.5rem;
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  padding-right: 0.5rem;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.location .form-group input {
+  padding: 1rem 0;
+  width: 300px;
+  padding-left: 3rem;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: dodgerblue;
+}
+
+.weather-report {
+  color: #fff;
+  text-align: center;
+}
+
+.weather-report p {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+/* About page */
+.about {
+  color: dodgerblue;
+  padding: 6rem 1rem;
+}
+
+.about p {
+  color: #fff;
+}
+
+.about img {
+  width: 250px;
+  height: 300px;
+  margin-left: 4rem;
+}
+
+.about li {
+  color: #fff;
+  padding-left: 3.9rem;
+  font-weight: bold;
+  line-height: 2;
+}
+
+/* Contact section */
+.contact {
+  text-align: center;
+  background: rgba(30, 144, 255, 0.5);
+  width: 90%;
+  margin: auto;
+  margin-top: 6rem;
+  padding: 2rem 0;
+}
+
+.contact h1 {
+  font-size: 4rem;
+  line-height: 1.4;
+}
+
+.contact .form-group {
+  display: block;
+  width: 100%;
+}
+
+.contact .form-group input,
+.contact .form-group textarea {
+  width: 90%;
+  outline: none;
+  border: none;
+}
+
+.contact .form-group textarea {
+  height: 8rem;
+}
+
+.contact .form-group button {
+  width: 90%;
+}
+/* footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  background-color: #333;
+}
+footer p {
+  text-align: center;
+  padding: 1rem;
+  color: #fff;
+  text-transform: capitalize;
+}
