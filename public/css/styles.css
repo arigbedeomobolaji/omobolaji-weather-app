@@ -337,9 +337,7 @@ footer p {
     font-weight: bold;
   }
 
-  .footer p {
-    padding: 5px;
-    font-weight: 600;
+  footer p {
     font-size: 10px;
   }
 }
