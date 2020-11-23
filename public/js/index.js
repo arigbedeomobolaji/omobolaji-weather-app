@@ -7,8 +7,8 @@ const weatherForecast = document.querySelector(".weather-data");
 submit.addEventListener("click", async (e) => {
  e.preventDefault();
  weatherForecast.innerHTML = "<h2>Loading...</h2>";
- const location = encodeURI(address.value);
- const url = `http://localhost:3000/weather?location=${location}`;
+ const location = encodeURI(address.value).trim();
+ const url = `/weather?location=${location}`;
 
  const response = await fetch(url);
  const data = await response.json();
